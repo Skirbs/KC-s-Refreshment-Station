@@ -1,0 +1,35 @@
+section {
+  width: 100%;
+}
+
+@keyframes posterPopup {
+  0% {
+    top: 900px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+#poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.15);
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+#poster img {
+  position: relative;
+
+  top: 900px;
+  animation: posterPopup 0.5s cubic-bezier(0.19, 1, 0.22, 1) 0.4s both;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  width: 900px;
+  overflow: hidden;
+}

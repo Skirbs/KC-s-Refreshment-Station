@@ -1,0 +1,48 @@
+/* This css file is applied to ALL PAGES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Variables */
+  /* --primary-color: hsl(32, 40%, 55%);
+  --secondary-color: hsl(27, 35%, 48%);
+  --tertiary-color: hsl(27, 45%, 40%); */
+
+  --primary-color: hsl(40, 40%, 55%);
+  --secondary-color: hsl(40, 35%, 48%);
+  --tertiary-color: hsl(40, 45%, 40%);
+
+  /* --primary-color: hsl(50, 60%, 40%);
+  --secondary-color: hsl(45, 55%, 35%);
+  --tertiary-color: hsl(50, 70%, 40%); */
+}
+
+body {
+  height: fit-content;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  /* font-family: sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Background Styling */
+#background {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+
+/* Scrollbar styling
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+  border-radius: 6px;
+} */
