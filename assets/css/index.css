@@ -52,4 +52,17 @@ section {
   width: 100%;
 }
 
-/** HERO SECTION **/
+/** INTRODUCTION SECTION **/
+#introduction {
+  padding: 6px 16px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#introduction .text-div {
+  /* padding-inline: 5rem; */
+}
+#introduction h1 {
+  margin-bottom: 12px;
+  font-size: 3rem;
+}
