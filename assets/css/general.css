@@ -1,4 +1,5 @@
 /* This css file is applied to ALL PAGES */
+@import url("https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -31,8 +32,7 @@ body {
   height: fit-content;
   min-height: 100vh;
   font-size: 1.25rem;
-  /* font-family: sans-serif; */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "TikTok Sans", sans-serif;
 }
 
 /* Background Styling */
@@ -50,6 +50,18 @@ p,
 a {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 }
+
+/* Button + Anchor General Styling */
+/* button,
+a {
+  transition: 0.125s;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+} */
 
 /* Scrollbar styling
 body::-webkit-scrollbar {
