@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | KC's Refreshment Station</title>
-    <link rel="shortcut icon" href="assets/images/icons/Logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/general.css" />
-    <link rel="stylesheet" href="assets/css/animation.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="shortcut icon" href="./assets/images/icons/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
     <!-- Background -->
@@ -23,9 +23,10 @@
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
       </nav>
-      <a id="header-cart" href="/cart.html">
-        <img class="not-filled" src="assets/images/icons/cart.svg" alt="Cart Icon" />
-        <img class="filled" src="assets/images/icons/cart-filled.svg" alt="Cart Icon" />
+
+      <a id="header-cart" href="./cart.html">
+        <img class="not-filled" src="./assets/images/icons/cart.svg" alt="Cart Icon" />
+        <img class="filled" src="./assets/images/icons/cart-filled.svg" alt="Cart Icon" />
       </a>
     </header>
 
@@ -41,17 +42,17 @@
       <img
         class="side-img"
         style="left: 3%; top: 10%; rotate: -10deg; animation-delay: 0.4s"
-        src="./assets/images/header/fries.png"
+        src="./assets/images/food/snacks/others/fries.png"
         alt="fries.png" />
       <img
         class="side-img"
         style="left: 17%; top: 40%; rotate: 5deg; animation-delay: 0.55s; width: 12%"
-        src="./assets/images/header/kikiam.png"
+        src="./assets/images/food/snacks/others/kikiam.png"
         alt="kikiam.png" />
       <img
         class="side-img"
         style="left: 6%; top: 60%; rotate: -4deg; animation-delay: 0.6s"
-        src="./assets/images/header/siomai.png"
+        src="./assets/images/food/snacks/others/siomai.png"
         alt="siomai.png" />
 
       <img
@@ -68,9 +69,40 @@
 
     <!-- Introduction Section -->
     <section id="introduction">
-      <div class="text-div">
+      <div class="intro-header">
         <h1>Welcome to KC's Refreshment Station!</h1>
         <p>Where we serve delicious and refreshing treats to satisfy your cravings.</p>
+      </div>
+
+      <h2>Our Offerings</h2>
+
+      <div class="intro-content">
+        <div class="intro-item">
+          <img src="./assets/images/food/drinks/Mango MilkTea.png" alt="Drinks Icon" />
+          <div class="intro-item-text">
+            <h3>Drinks</h3>
+            <p>Dessert-style drinks such as milk teas and fruit teas to brighten your afternoon</p>
+          </div>
+        </div>
+
+        <div class="intro-item">
+          <img src="./assets/images/food/snacks/others/fries.png" alt="Snacks Icon" />
+          <div class="intro-item-text">
+            <h3>Snacks</h3>
+            <p>
+              Crunchy, flavorful snacks made to satisfy every craving, whether you’re chilling with friends or on the
+              go.
+            </p>
+          </div>
+        </div>
+
+        <div class="intro-item">
+          <img src="./assets/images/food/dessert/Chocolate Cake.jpg" alt="Desserts Icon" />
+          <div class="intro-item-text">
+            <h3>Desserts</h3>
+            <p>Indulge in the perfect mix of cakes and desserts, perfect for treating yourself after a long day.</p>
+          </div>
+        </div>
       </div>
     </section>
 

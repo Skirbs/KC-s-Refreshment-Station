@@ -17,11 +17,11 @@
   --secondary-color: hsl(40, 35%, 48%);
   --tertiary-color: hsl(40, 45%, 40%); */
 
-  --primary-color: #ffefd0;
-  --secondary-color: #be9361;
-  --tertiary-color: #a97449;
+  --primary-color: rgb(233, 213, 174);
+  --secondary-color: rgb(190, 147, 97);
+  --tertiary-color: rgb(169, 116, 73);
 
-  --text-color: #fffdf2;
+  --text-color: rgb(255, 253, 242);
 
   /* --primary-color: hsl(50, 60%, 40%);
   --secondary-color: hsl(45, 55%, 35%);
@@ -46,6 +46,7 @@ body {
 /* Text Design */
 h1,
 h2,
+h3,
 p,
 a {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
