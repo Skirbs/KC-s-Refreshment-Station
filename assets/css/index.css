@@ -9,7 +9,6 @@ section {
   border-bottom: 10px solid rgba(0, 0, 0, 0.1);
   padding-block: 64px;
   min-height: 500px;
-  overflow: hidden;
 }
 
 #hero img {
@@ -44,12 +43,39 @@ section {
 
 #hero a {
   display: block;
+  position: relative;
   margin: 0 auto;
   width: 35%;
+
+  &::after {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.125s;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    padding: 3px 16px;
+    content: "";
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   &:hover {
     scale: 1.06;
+    &::after {
+      bottom: -42px;
+      opacity: 1;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+      content: "Check Out Our Menu!";
+    }
   }
 }
+
 #hero img.main {
   border: 8px solid var(--tertiary-color);
   border-radius: 12px;
