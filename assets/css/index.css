@@ -15,7 +15,7 @@ section {
 #hero img {
   opacity: 0;
   filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.5));
-  animation: popupFadeIn 1s 0.3s ease-out forwards;
+  animation: popupFadeIn 1s 0.45s ease-out forwards;
   /* Note: 0.3s animation delay for image to load */
 
   transition: 0.125s;
@@ -81,7 +81,6 @@ section {
   }
   & p {
     border-radius: 12px;
-    /* background-color: rgba(var(--primary-color), 0.8); */
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 1.75rem;
   }
@@ -104,13 +103,9 @@ section {
   max-width: 1200px;
 }
 .intro-item {
-  display: flex;
   position: relative;
   flex: 1;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  margin-top: 100px;
+  margin-top: 110px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   border-bottom: 5px solid var(--tertiary-color);
   border-radius: 12px;
@@ -121,13 +116,14 @@ section {
 .intro-item img {
   position: absolute;
   top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
   margin-right: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   border-bottom: 5px solid var(--tertiary-color);
   border-radius: 50%;
   aspect-ratio: 1/1;
   width: 200px;
-  max-width: 80%;
   object-fit: cover;
 }
 .intro-item-text {
@@ -138,4 +134,48 @@ section {
   & p {
     font-size: 1.4rem;
   }
+}
+
+/* Why Choose Us Section */
+#why-us {
+  display: flex;
+  justify-content: center;
+  margin-block: 24px;
+  border-block: 5px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--tertiary-color);
+  padding: 12px 16px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#why-us img {
+  margin-right: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.why-us-content {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & h2 {
+    margin-bottom: 12px;
+    font-size: 4rem;
+  }
+}
+
+.why-us-content ul {
+  display: flex;
+
+  gap: 0.15rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  list-style-type: none;
+  text-align: center;
 }

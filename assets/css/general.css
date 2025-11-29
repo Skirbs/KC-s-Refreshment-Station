@@ -9,23 +9,13 @@
 
 :root {
   /* Variables */
-  /* --primary-color: hsl(32, 40%, 55%);
-  --secondary-color: hsl(27, 35%, 48%);
-  --tertiary-color: hsl(27, 45%, 40%); */
-
-  /* --primary-color: hsl(40, 40%, 55%);
-  --secondary-color: hsl(40, 35%, 48%);
-  --tertiary-color: hsl(40, 45%, 40%); */
-
   --primary-color: rgb(233, 213, 174);
   --secondary-color: rgb(190, 147, 97);
   --tertiary-color: rgb(169, 116, 73);
 
   --text-color: rgb(255, 253, 242);
 
-  /* --primary-color: hsl(50, 60%, 40%);
-  --secondary-color: hsl(45, 55%, 35%);
-  --tertiary-color: hsl(50, 70%, 40%); */
+  --scrollbar-background-color: rgb(235, 183, 124);
 }
 
 body {
@@ -48,7 +38,8 @@ h1,
 h2,
 h3,
 p,
-a {
+a,
+li {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -64,12 +55,13 @@ a {
   }
 } */
 
-/* Scrollbar styling
+/* Scrollbar Styling */
 body::-webkit-scrollbar {
-  width: 12px;
+  background-color: var(--scrollbar-background-color);
+  width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--tertiary-color);
   border-radius: 6px;
-} */
+  background-color: var(--tertiary-color);
+}
