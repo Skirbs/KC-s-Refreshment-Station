@@ -90,3 +90,16 @@ nav .logo {
   pointer-events: none;
   color: white;
 }
+
+#header-cart .cart-count:not(:empty) {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  padding: 2px 6px;
+  pointer-events: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
