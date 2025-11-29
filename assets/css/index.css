@@ -165,6 +165,8 @@ section {
   align-items: center;
   & h2 {
     margin-bottom: 12px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
     font-size: 4rem;
   }
 }
@@ -172,10 +174,14 @@ section {
 .why-us-content ul {
   display: flex;
 
-  gap: 0.15rem;
+  padding-inline: 20px;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.2;
   list-style-type: none;
   text-align: center;
+
+  & li {
+    flex: 1;
+  }
 }
