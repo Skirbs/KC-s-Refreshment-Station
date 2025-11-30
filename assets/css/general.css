@@ -12,6 +12,7 @@
   --primary-color: rgb(233, 213, 174);
   --secondary-color: rgb(190, 147, 97);
   --tertiary-color: rgb(169, 116, 73);
+  --darker-tertiary-color: rgb(139, 96, 53);
 
   --text-color: rgb(255, 253, 242);
 
@@ -64,4 +65,8 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background-color: var(--tertiary-color);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--darker-tertiary-color);
 }

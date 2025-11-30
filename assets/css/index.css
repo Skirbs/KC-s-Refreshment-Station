@@ -211,3 +211,67 @@ section {
     flex: 1;
   }
 }
+
+/* Contact Section */
+#info-and-details {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 100px;
+  margin: 64px auto;
+  width: 80%;
+
+  color: var(--text-color);
+}
+
+.info-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 24px;
+  background-color: var(--secondary-color);
+  max-width: 800px;
+  text-align: center;
+  & h2 {
+    margin-bottom: 12px;
+    border-bottom: 4px solid var(--darker-tertiary-color);
+    border-radius: 24px 24px 0 0;
+    background-color: var(--tertiary-color);
+    padding-block: 4px;
+    font-size: 3rem;
+  }
+  & p {
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+  }
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-item h3 {
+  font-size: 2rem;
+}
+
+.info-images {
+  position: relative;
+  width: 400px;
+}
+.info-images img {
+  position: absolute;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 10%;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+/* TODO: Fix Tooltip Font size */
+/* TODO: Remove Hero Section Images */
+/* TODO: Fix h1 Font Size */
+/* TODO: Change Flex Direction Of "Our Offerings" */
