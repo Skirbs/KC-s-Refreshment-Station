@@ -186,6 +186,7 @@ section {
 .why-us-content {
   display: flex;
   flex: 0.8;
+  max-width: 1600px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -16,7 +16,8 @@
 
   --text-color: rgb(255, 253, 242);
 
-  --scrollbar-background-color: rgb(235, 183, 124);
+  --scrollbar-thumb-color: rgb(199, 170, 137);
+  --scrollbar-background-color: hsl(27, 40%, 40%);
 }
 
 body {
@@ -56,6 +57,18 @@ a {
   }
 } */
 
+/* Footer */
+footer {
+  margin-top: 32px;
+  border-top: 2px solid var(--darker-tertiary-color);
+  background-color: var(--tertiary-color);
+  padding: 12px;
+  width: 100%;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-align: center;
+}
+
 /* Scrollbar Styling */
 body::-webkit-scrollbar {
   background-color: var(--scrollbar-background-color);
@@ -64,7 +77,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 6px;
-  background-color: var(--tertiary-color);
+  background-color: var(--scrollbar-thumb-color);
 }
 
 body::-webkit-scrollbar-thumb:hover {
