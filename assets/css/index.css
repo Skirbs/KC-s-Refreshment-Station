@@ -7,8 +7,8 @@ section {
 #hero {
   position: relative;
   border-bottom: 10px solid rgba(0, 0, 0, 0.1);
-  padding-block: 64px;
-  min-height: 500px;
+  padding-block: 80px;
+  /* min-height: 500px; */
 }
 
 #hero img {
@@ -27,15 +27,27 @@ section {
 #hero img.background {
   position: absolute;
   opacity: 0.4;
-  z-index: -1;
+  z-index: -10;
   animation: none !important;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+#hero .side-images-div {
+  /* Effects wont be visible if screen too large due to media queries */
+  display: flex;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
 #hero img.side-img {
   position: absolute;
+  z-index: -1;
   border: 5px solid var(--tertiary-color);
   border-radius: 12px;
   width: 10%;
@@ -60,15 +72,16 @@ section {
     padding: 3px 16px;
     content: "";
     color: var(--text-color);
+    text-wrap: nowrap;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 
   &:hover {
     scale: 1.06;
     &::after {
-      bottom: -42px;
+      bottom: -40px;
       opacity: 1;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
       content: "Check Out Our Menu!";
@@ -92,21 +105,23 @@ section {
   text-align: center;
 }
 
-.intro-header {
+#intro-header {
   margin-block: 24px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
   border-bottom: 5px solid var(--tertiary-color);
   border-radius: 12px;
   background-color: var(--secondary-color);
-  padding: 24px 56px;
+  padding: 24px 0px;
   padding-block: 0px;
 
   & h1 {
+    padding-inline: 12px;
     font-size: 4rem;
   }
   & p {
     border-radius: 12px;
+    padding: 12px;
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 1.75rem;
   }
@@ -176,6 +191,7 @@ section {
 
 #why-us img {
   margin-right: 24px;
+  margin-block: auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   border-radius: 50%;
   width: 300px;
@@ -206,7 +222,6 @@ section {
   font-size: 1.5rem;
   line-height: 1.2;
   list-style-type: none;
-  text-align: center;
 
   & li {
     flex: 1;
@@ -234,13 +249,15 @@ section {
   background-color: var(--secondary-color);
   max-width: 800px;
   text-align: center;
+
   & h2 {
     margin-bottom: 12px;
     border-bottom: 4px solid var(--darker-tertiary-color);
     border-radius: 24px 24px 0 0;
     background-color: var(--tertiary-color);
+    padding-inline: 12px;
     padding-block: 4px;
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   & p {
     margin-bottom: 24px;
@@ -252,10 +269,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-inline: 24px;
 }
 
 .info-item h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .info-images {
@@ -282,6 +300,7 @@ section {
   min-height: 250px;
   overflow: hidden;
   color: var(--text-color);
+  text-align: center;
 
   & h2 {
     font-size: 4rem;
@@ -322,8 +341,179 @@ section {
   height: 100%;
   object-fit: cover;
 }
+
 /* Responsive Design */
-/* TODO: Fix Tooltip Font size */
-/* TODO: Remove Hero Section Images */
-/* TODO: Fix h1 Font Size */
-/* TODO: Change Flex Direction Of "Our Offerings" */
+
+@media (max-width: 1240px) {
+  /* Contact Section */
+  #info-and-details {
+    gap: 24px;
+  }
+  .info-images {
+    margin-block: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .info-images img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 860px) {
+  /* Hero Section */
+  #hero {
+    padding-block: 40px;
+  }
+  #hero a {
+    width: 60%;
+  }
+  #hero .side-img {
+    position: static !important;
+    rotate: 0deg !important;
+    width: 125px !important;
+  }
+
+  /* Introduction */
+  #intro-header h1 {
+    font-size: 3rem;
+  }
+  #intro-header p {
+    font-size: 1.5rem;
+  }
+
+  #introduction h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-item-text h3 {
+    font-size: 2.5rem;
+  }
+  .intro-item-text p {
+    font-size: 1.5rem;
+  }
+
+  /* Why Us */
+  #why-us {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  #why-us img {
+    width: 250px;
+    height: 250px;
+  }
+  .why-us-content h2 {
+    font-size: 2.8rem;
+  }
+  .why-us-content ul {
+    flex-direction: column;
+    gap: 24px;
+    font-size: 1.25rem;
+  }
+
+  /* Contact Section */
+  #info-and-details {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 0;
+  }
+
+  .info-images {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  .info-images img {
+    position: static;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Redirect Section */
+  #menu-redirect {
+    padding: 64px 32px;
+  }
+  #menu-redirect h2 {
+    font-size: 3rem;
+  }
+  #menu-redirect p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 430px) {
+  /* Hero Section */
+  #hero a {
+    width: 80%;
+  }
+
+  #hero .side-img {
+    display: none;
+  }
+
+  /* Introduction Section */
+  #intro-header h1 {
+    font-size: 2rem;
+  }
+  #intro-header p {
+    font-size: 1.25rem;
+  }
+  #introduction h2 {
+    font-size: 2rem;
+  }
+  .intro-item img {
+    width: 150px;
+    height: 150px;
+    top: -75px;
+  }
+
+  /* Why Choose Us */
+  #why-us img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Contact Section */
+  .info-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 350px) {
+  /* Introduction Section */
+  #intro-header h1 {
+    font-size: 1.5rem;
+  }
+  #intro-header p {
+    font-size: 1rem;
+  }
+
+  .intro-item-text h3 {
+    font-size: 2rem;
+  }
+  .intro-item-text p {
+    font-size: 1.3rem;
+  }
+
+  /* Contact Section */
+  .info-text h2 {
+    font-size: 2rem;
+  }
+  .info-item h3 {
+    font-size: 1.4rem;
+  }
+  .info-item p {
+    font-size: 1.2rem;
+  }
+}

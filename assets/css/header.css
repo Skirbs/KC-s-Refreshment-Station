@@ -36,8 +36,6 @@ nav a {
     &:first-child {
       rotate: -10deg;
       scale: 1.1;
-      background-color: transparent; /* Prevents logo background on hover */
-      padding: 0; /* Prevents logo padding on hover */
     }
   }
 
@@ -50,11 +48,13 @@ nav .logo {
   height: 64px;
 }
 
-#header-cart {
+#header-right {
   display: flex;
   align-items: center;
   padding-right: 1rem;
+}
 
+#header-cart {
   /* Cart Icon Design */
   & img.filled {
     display: none;
@@ -101,4 +101,27 @@ nav .logo {
   color: white;
   font-weight: bold;
   font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  nav {
+    justify-content: center;
+  }
+  nav a:not(:first-child) {
+    display: none;
+  }
+  nav .logo {
+    height: 48px;
+  }
+
+  #header-cart img {
+    height: 28px;
+  }
 }
