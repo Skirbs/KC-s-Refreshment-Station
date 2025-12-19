@@ -19,9 +19,6 @@ section {
 
   transition: 0.125s;
   width: 30%;
-  &:hover {
-    scale: 1.02;
-  }
 }
 
 #hero img.background {
@@ -47,10 +44,12 @@ section {
 
 #hero img.side-img {
   position: absolute;
-  z-index: -1;
   border: 5px solid var(--tertiary-color);
   border-radius: 12px;
   width: 10%;
+  &:hover {
+    scale: 1.02;
+  }
 }
 
 #hero a {
@@ -72,10 +71,10 @@ section {
     padding: 3px 16px;
     content: "";
     color: var(--text-color);
-    text-wrap: nowrap;
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
+    text-wrap: nowrap;
   }
 
   &:hover {
@@ -107,13 +106,11 @@ section {
 
 #intro-header {
   margin-block: 24px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
   border-bottom: 5px solid var(--tertiary-color);
   border-radius: 12px;
   background-color: var(--secondary-color);
   padding: 24px 0px;
-  padding-block: 0px;
 
   & h1 {
     padding-inline: 12px;
@@ -121,8 +118,8 @@ section {
   }
   & p {
     border-radius: 12px;
-    padding: 12px;
     background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
     font-size: 1.75rem;
   }
 }
@@ -471,9 +468,9 @@ section {
     font-size: 2rem;
   }
   .intro-item img {
+    top: -75px;
     width: 150px;
     height: 150px;
-    top: -75px;
   }
 
   /* Why Choose Us */

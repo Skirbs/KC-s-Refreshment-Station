@@ -1,3 +1,4 @@
+<!-- TODO; REPLACE "alt" OF IMAGES AND THE DESCRIPTION (double check everything)!! -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/general.css" />
     <link rel="stylesheet" href="./assets/css/animation.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css" />
   </head>
   <body>
     <!-- Background -->
@@ -20,18 +21,651 @@
         <a href="#"><img class="logo" src="assets/images/icons/Logo.png" alt="Logo" /></a>
         <a href="./index.html">Home</a>
         <a class="active" href="./menu.html">Menu</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
       </nav>
-      <a id="header-cart" href="./cart.html">
-        <img class="not-filled" src="./assets/images/icons/cart.svg" alt="Cart Icon" />
-        <img class="filled" src="./assets/images/icons/cart-filled.svg" alt="Cart Icon" />
-      </a>
+
+      <!-- Right side -->
+      <div id="header-right">
+        <a id="header-cart" href="./cart.html">
+          <img class="not-filled" src="./assets/images/icons/cart.svg" alt="Cart Icon" />
+          <img class="filled" src="./assets/images/icons/cart-filled.svg" alt="Cart Icon" />
+          <span class="cart-count"></span>
+        </a>
+      </div>
     </header>
 
+    <h1>Menu Selection</h1>
+    <main id="menu">
+      <h2>Drinks</h2>
+
+      <h3>Milk Tea</h3>
+      <ul class="menu-category-grid" id="milk-tea">
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/milk tea/Chocolate.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Chocolate</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Chocolate Milk Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/milk tea/Hokkaido.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Hokkaido</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Hokkaido Milk Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/milk tea/Matcha.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Matcha</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Matcha Milk Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/milk tea/Okinawa.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Okinawa</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Okinawa Milk Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/milk tea/Red Velvet.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Red Velvet</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Red Velvet Milk Tea</p>
+            <select>
+              <option value="Medium">Medium (₱39)</option>
+              <option value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/milk tea/Wintermelon.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Wintermelon</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Wintermelon Milk Tea</p>
+            <select>
+              <option value="Medium">Medium (₱39)</option>
+              <option value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Fruit Tea</h3>
+      <ul class="menu-category-grid" id="fruit-tea">
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/fruit tea/Blueberry.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Blueberry</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Blueberry Fruit Tea</p>
+            <select>
+              <option value="Medium">Medium (₱39)</option>
+              <option value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/fruit tea/Four Season.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Four Season</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Four Season Fruit Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/fruit tea/Green Apple.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Green Apple</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Green Apple Fruit Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/fruit tea/Kiwi.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Kiwi</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Kiwi Fruit Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/fruit tea/Lychee.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Lychee</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Lychee Fruit Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/fruit tea/Orange.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Orange</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Orange Fruit Tea</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/fruit tea/Passion Fruit.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Passion Fruit</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Passion Fruit Tea</p>
+            <select>
+              <option value="Medium">Medium (₱39)</option>
+              <option value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/fruit tea/Strawberry.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Strawberry</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Strawberry Fruit Tea</p>
+            <select>
+              <option value="Medium">Medium (₱39)</option>
+              <option value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Iced Coffee</h3>
+      <ul class="menu-category-grid" id="ice-coffee">
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/iced coffee/French Vanilla.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>French Vanilla</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">French Vanilla Iced Coffee</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/iced coffee/Hazelnut.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Hazelnut</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">
+              Hazelnut Iced <br />
+              Coffee
+            </p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/iced coffee/Iced Americano.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Iced Americano</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Iced Americano Coffee</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/iced coffee/Salted Caramel.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Salted Caramel</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Salted Caramel Iced Coffee</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/iced coffee/Spanish Latte.png"
+            style="object-fit: contain"
+            alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Spanish Latte</h4>
+            <p class="price">₱39-₱49</p>
+            <p class="desc">Spanish Latte Iced Coffee</p>
+            <select>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Hot Drink</h3>
+      <ul class="menu-category-grid" id="hot-drink">
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/hot drinks/Cappuccino.png"
+            style="object-fit: contain"
+            alt="Cappuccino" />
+          <div class="item-info-div">
+            <h4>Cappuccino</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot Cappuccino Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/hot drinks/Caramel Macchiato.png"
+            style="object-fit: contain"
+            alt="Caramel Macchiato" />
+          <div class="item-info-div">
+            <h4>Caramel Macchiato</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot Caramel Macchiato Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/hot drinks/French Vanilla.png"
+            style="object-fit: contain"
+            alt="French Vanilla" />
+          <div class="item-info-div">
+            <h4>French Vanilla</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot French Vanilla Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/hot drinks/Hazelnut.png" style="object-fit: contain" alt="Hazelnut" />
+          <div class="item-info-div">
+            <h4>Hazelnut</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot Hazelnut Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/drinks/hot drinks/Hot Choco.png" style="object-fit: contain" alt="Hot Choco" />
+          <div class="item-info-div">
+            <h4>Hot Choco</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot Choco Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/hot drinks/Matcha Latte.png"
+            style="object-fit: contain"
+            alt="Matcha Latte" />
+          <div class="item-info-div">
+            <h4>Matcha Latte</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot Matcha Latte Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/hot drinks/Roasted Coffee.png"
+            style="object-fit: contain"
+            alt="Roasted Coffee" />
+          <div class="item-info-div">
+            <h4>Roasted Coffee</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot Roasted Coffee Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/drinks/hot drinks/Salted Caramel.png"
+            style="object-fit: contain"
+            alt="Salted Caramel" />
+          <div class="item-info-div">
+            <h4>Salted Caramel</h4>
+            <p class="price">₱49-₱59</p>
+            <p class="desc">Hot Salted Caramel Drink</p>
+            <select>
+              <option data-price="49" value="Medium">Medium (₱49)</option>
+              <option data-price="59" value="Large">Large (₱59)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2>Snacks</h2>
+
+      <h3>Burgers</h3>
+      <ul class="menu-category-grid" id="burgers">
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/burger/Solo.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Solo Burger</h4>
+            <p class="price">₱35</p>
+            <p class="desc">Single juicy burger</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/burger/Combo meal.png" style="object-fit: contain" alt="Combo Meal" />
+          <div class="item-info-div">
+            <h4>Burger Combo Meal</h4>
+            <p class="price">₱100</p>
+            <p class="desc">Burger with fries & milk tea</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img
+            src="./assets/images/food/snacks/burger/Triple Threat.png"
+            style="object-fit: contain"
+            alt="Triple Threat" />
+          <div class="item-info-div">
+            <h4>Burger Triple Threat</h4>
+            <p class="price">₱100</p>
+            <p class="desc">Three burgers, save ₱5</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Others Snacks</h3>
+      <ul class="menu-category-grid" id="other-snacks">
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/others/siomai.png" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Siomai (4pcs)</h4>
+            <p class="price">₱20</p>
+            <p class="desc">Siomai</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/others/kikiam.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Kikiam (6pcs)</h4>
+            <p class="price">₱10</p>
+            <p class="desc">Kikiam</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/others/fishball.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Fishball (15pcs)</h4>
+            <p class="price">₱10</p>
+            <p class="desc">Fries</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/others/fries.png" style="object-fit: contain" alt="Fries" />
+          <div class="item-info-div">
+            <h4>Cheese Fries</h4>
+            <p class="price">₱20-₱50</p>
+            <p class="desc">Cheese Fries</p>
+            <select>
+              <option data-price="20" value="Small">Small (₱20)</option>
+              <option data-price="30" value="Medium">Medium (₱30)</option>
+              <option data-price="40" value="Large">Large (₱40)</option>
+              <option data-price="50" value="Extra Large">Extra Large (₱50)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/others/fries.png" style="object-fit: contain" alt="Fries" />
+          <div class="item-info-div">
+            <h4>BBQ Fries</h4>
+            <p class="price">₱20-₱50</p>
+            <p class="desc">Cheese Fries</p>
+            <select>
+              <option data-price="20" value="Small">Small (₱20)</option>
+              <option data-price="30" value="Medium">Medium (₱30)</option>
+              <option data-price="40" value="Large">Large (₱40)</option>
+              <option data-price="50" value="Extra Large">Extra Large (₱50)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/others/fries.png" style="object-fit: contain" alt="Fries" />
+          <div class="item-info-div">
+            <h4>Sour & Cream Fries</h4>
+            <p class="price">₱20-₱50</p>
+            <p class="desc">Cheese Fries</p>
+            <select>
+              <option data-price="20" value="Small">Small (₱20)</option>
+              <option data-price="30" value="Medium">Medium (₱30)</option>
+              <option data-price="40" value="Large">Large (₱40)</option>
+              <option data-price="50" value="Extra Large">Extra Large (₱50)</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/others/cheeseStick.png" style="object-fit: contain" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Cheese Stick (7pcs)</h4>
+            <p class="price">₱10</p>
+            <p class="desc">Kikiam</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+
+      <hr />
+      <h2>Desserts</h2>
+
+      <h3>Cake</h3>
+      <ul class="menu-category-grid" id="desserts">
+        <li class="menu-item">
+          <img src="./assets/images/food/dessert/Chocolate Cake.jpg" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Classic Moist Chocolate Cake with Caramel Filling</h4>
+            <p class="price">₱1300</p>
+            <p class="desc">Rich chocolate cake with caramel inside.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/dessert/Caramel Cake.jpg" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Chocolate Caramel Cake</h4>
+            <p class="price">₱1300</p>
+            <p class="desc">Chocolate cake topped with smooth caramel sauce.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/dessert/Classic Basque Cheesecake.jpg" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Classic Burnt Basque Cheesecake</h4>
+            <p class="price">₱815</p>
+            <p class="desc">Chocolate cake topped with smooth caramel sauce.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/dessert/Lotus Basque Cheesecake.jpg" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Lotus Burnt Basque Cheesecake</h4>
+            <p class="price">₱815</p>
+            <p class="desc">Chocolate cake topped with smooth caramel sauce.</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+
+      <h3>Graham</h3>
+      <ul class="menu-category-grid" id="graham-balls">
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/graham balls/grahamBalls1.jpg" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Original Graham Balls (4pcs)</h4>
+            <p class="price">₱20</p>
+            <p class="desc">Single juicy burger</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/graham balls/grahamBalls2.jpg" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Choco Graham Balls (4pcs)</h4>
+            <p class="price">₱20</p>
+            <p class="desc">Single juicy burger</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+        <li class="menu-item">
+          <img src="./assets/images/food/snacks/graham balls/grahamBalls3.jpg" alt="Solo Burger" />
+          <div class="item-info-div">
+            <h4>Brown Graham Balls (4pcs)</h4>
+            <p class="price">₱20</p>
+            <p class="desc">Single juicy burger</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </li>
+      </ul>
+    </main>
+
     <!-- Footer -->
-    <!-- <footer>
-      <p>...</p>
-    </footer> -->
+    <footer>
+      <p>Created by <b>Gavino, Czeann Kirbie S.</b> • PUPQC 2025-2026 • BSIT 1-1</p>
+    </footer>
   </body>
 </html>
