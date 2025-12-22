@@ -63,7 +63,6 @@ nav .logo {
     display: block;
   }
 
-  /** Note: Put To General.css If Repeatable */
   &:hover {
     opacity: 0.95;
 
@@ -77,6 +76,11 @@ nav .logo {
   }
   &:active {
     opacity: 0.7;
+  }
+
+  /** Only applies when in the cart page **/
+  &.active img.filled {
+    display: block;
   }
 }
 

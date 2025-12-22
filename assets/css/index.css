@@ -110,7 +110,7 @@ section {
   border-bottom: 5px solid var(--tertiary-color);
   border-radius: 12px;
   background-color: var(--secondary-color);
-  padding: 24px 0px;
+  padding: 24px 12px;
 
   & h1 {
     padding-inline: 12px;

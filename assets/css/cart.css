@@ -1,0 +1,30 @@
+h1 {
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--tertiary-color);
+  border-radius: 6px;
+  padding-block: 4px;
+  padding: 8px 40px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Empty cart */
+#empty-cart-div {
+  margin-top: 48px;
+  border-block: 3px dashed var(--darker-tertiary-color);
+  background-color: var(--secondary-color);
+  padding-block: 24px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+#empty-cart-div .icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+#empty-cart-div .desc {
+  font-size: 2rem;
+  font-weight: bold;
+}
