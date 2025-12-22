@@ -23,7 +23,7 @@
 
 body {
   position: relative;
-  padding-bottom: 56px; /* For footer spacing */
+  padding-bottom: 72px; /* For footer spacing */
   height: fit-content;
   min-height: 100vh;
   font-size: 1.25rem;
@@ -80,6 +80,12 @@ footer {
   color: var(--text-color);
   font-size: 1rem;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  footer {
+    font-size: 0.7rem;
+  }
 }
 
 /* Scrollbar Styling */

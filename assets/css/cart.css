@@ -64,6 +64,10 @@ h1 {
 #cart-header > * {
   background-color: var(--tertiary-color);
 }
+#cart-header #cart-mobile-header {
+  display: none;
+}
+
 .cart-item {
   display: flex;
   justify-content: center;
@@ -158,4 +162,52 @@ h1 {
   font-size: 1.5rem;
   text-align: center;
   text-wrap: balance;
+}
+
+/* Responsive Design */
+@media (max-width: 769px) {
+  #cart-contents-div {
+    margin: 10px;
+  }
+
+  #cart-header > * {
+    display: none;
+  }
+  #cart-header #cart-mobile-header {
+    display: block;
+    flex: 1;
+  }
+
+  #cart-items-container {
+    gap: 2px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .cart-item > * {
+    width: 100%;
+    padding-block: 12px;
+  }
+  .cart-item {
+    align-items: center;
+  }
+
+  .name-col {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .name-col img {
+    border-right: none;
+    border-bottom: 4px solid var(--darker-tertiary-color);
+  }
+
+  #cart-total-div {
+    flex-direction: column;
+    width: 90%;
+  }
+  #total-label {
+    text-align: center;
+  }
 }

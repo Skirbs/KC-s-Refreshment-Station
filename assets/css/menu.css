@@ -25,8 +25,8 @@ hr {
   align-items: center;
   gap: 24px;
   margin-top: 24px;
-  margin-inline: auto;
-  max-width: 1300px;
+  width: 100%;
+  padding-inline: 5vw;
 }
 
 #menu h2 {
@@ -35,7 +35,7 @@ hr {
   border-radius: 12px;
   background-color: var(--secondary-color);
   padding: 10px 24px;
-  width: 100%;
+  width: 80%;
   max-width: 800px;
   font-size: 3rem;
   text-align: center;
@@ -161,4 +161,56 @@ hr {
   }
 }
 
-/* NOTE: Commit should be about Added Menu Element + Start Design */
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-item {
+    max-width: 300px;
+  }
+  .menu-item img {
+    width: 220px !important;
+    height: 150px;
+  }
+}
+
+@media (max-width: 426px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #menu {
+    padding-inline: 0vw;
+  }
+
+  #menu h2 {
+    font-size: 2.25rem;
+  }
+  #menu h3 {
+    font-size: 2rem;
+  }
+
+  .menu-item {
+    max-width: 150px;
+  }
+  .menu-item img {
+    width: 120px !important;
+    height: 100px;
+  }
+
+  .item-info-div h4 {
+    font-size: 1.5rem;
+  }
+  .item-info-div .price {
+    font-size: 1rem;
+  }
+  .item-info-div .desc {
+    font-size: 1.2rem;
+  }
+  .item-info-div select {
+    font-size: 1rem;
+    padding-block: 4px;
+  }
+  .item-info-div button {
+    width: 8rem;
+    font-size: 1rem;
+  }
+}
