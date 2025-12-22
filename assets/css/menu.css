@@ -106,7 +106,7 @@ hr {
 .item-info-div .desc {
   margin-bottom: 8px;
   font-size: 1.5rem;
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 .item-info-div select {
   cursor: pointer;

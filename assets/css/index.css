@@ -365,6 +365,9 @@ section {
   }
   #hero a {
     width: 60%;
+    &:hover::after {
+      display: none;
+    }
   }
   #hero .side-img {
     position: static !important;
