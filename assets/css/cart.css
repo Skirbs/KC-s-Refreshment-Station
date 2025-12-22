@@ -163,6 +163,29 @@ h1 {
   text-align: center;
   text-wrap: balance;
 }
+/* Checkout Button */
+#checkout-button {
+  margin: auto;
+  margin-top: 24px;
+  display: block;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  color: var(--text-color);
+  background-color: var(--tertiary-color);
+  width: 300px;
+  border: 3px solid var(--darker-tertiary-color);
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}
 
 /* Responsive Design */
 @media (max-width: 769px) {
