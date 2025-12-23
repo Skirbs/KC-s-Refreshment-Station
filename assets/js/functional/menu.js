@@ -32,7 +32,7 @@ addToCartBtns.forEach((btn) => {
       cartItems[productTitle].imgSrc = imgSrc;
     }
 
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    saveItems();
 
     headerCartTotalQty++;
     cartCountElement.innerText = headerCartTotalQty;
