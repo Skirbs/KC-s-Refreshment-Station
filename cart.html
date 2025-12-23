@@ -26,7 +26,7 @@
       <div id="header-right">
         <a id="header-cart" class="active" href="./cart.html">
           <img class="filled" src="./assets/images/icons/cart-filled.svg" alt="Cart Icon" />
-          <span class="cart-count"></span>
+          <span id="cart-count"></span>
         </a>
       </div>
     </header>
@@ -35,67 +35,39 @@
 
     <!-- If Cart Empty -->
 
-    <!-- <div id="empty-cart-div">
+    <div id="empty-cart-div">
       <span class="icon">😅</span>
       <span class="desc">Your cart is currently empty.</span>
-    </div> -->
+    </div>
 
     <!-- If Cart Not Empty -->
-    <div id="cart-contents-div">
-      <div id="cart-header">
-        <span id="item-col-header">Item</span>
-        <span id="quantity-col-header">Quantity</span>
-        <span id="price-col-header">Price</span>
-        <span id="cart-mobile-header">Cart Info</span>
+    <main id="main-cart-div" style="display: none">
+      <div id="cart-contents-div">
+        <div id="cart-header">
+          <span id="item-col-header">Item</span>
+          <span id="quantity-col-header">Quantity</span>
+          <span id="price-col-header">Price</span>
+          <span id="cart-mobile-header">Cart Info</span>
+        </div>
+
+        <ul id="cart-items-container"></ul>
       </div>
 
-      <ul id="cart-items-container">
-        <li class="cart-item">
-          <span class="name-col">
-            <img src="./assets/images/food/dessert/Caramel Cake.jpg" alt="" />
-            <hr />
-            <span class="item-name">Caramel Cake</span>
-          </span>
-          <span class="quantity-col">
-            <button class="qty-decrease"><img src="./assets/images/icons/minus.svg" alt="-" /></button>
-            <span>x20</span>
-            <button class="qty-increase"><img src="./assets/images/icons/plus.svg" alt="+" /></button>
-          </span>
-          <span class="price-col">
-            <span>₱1200</span>
-          </span>
-        </li>
+      <div id="cart-total-div">
+        <span id="total-label">Total</span>
+        <span id="total-amount">₱120000 (1 items)</span>
+      </div>
 
-        <li class="cart-item">
-          <span class="name-col">
-            <img src="./assets/images/food/dessert/Caramel Cake.jpg" alt="" />
-            <hr />
-            <span class="item-name">Caramel Cake</span>
-          </span>
-          <span class="quantity-col">
-            <button class="qty-decrease"><img src="./assets/images/icons/minus.svg" alt="-" /></button>
-            <span>x20</span>
-            <button class="qty-increase"><img src="./assets/images/icons/plus.svg" alt="+" /></button>
-          </span>
-          <span class="price-col">
-            <span>₱1200</span>
-          </span>
-        </li>
-      </ul>
-    </div>
-
-    <div id="cart-total-div">
-      <span id="total-label">Total</span>
-      <span id="total-amount">₱120000 (1 items)</span>
-    </div>
-
-    <button id="checkout-button">Checkout Now!</button>
+      <button id="checkout-button">Checkout Now!</button>
+    </main>
 
     <!-- Footer -->
     <footer>
       <p>Created by <b>Gavino, Czeann Kirbie S.</b> • PUPQC 2025-2026 • BSIT 1-1</p>
     </footer>
 
+    <!-- JS -->
+    <script src="./assets/js/design/headerCartCount.js"></script>
     <script src="./assets/js/functional/cart.js"></script>
   </body>
 </html>

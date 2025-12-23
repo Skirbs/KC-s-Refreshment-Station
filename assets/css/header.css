@@ -94,7 +94,7 @@ nav .logo {
   color: white;
 }
 
-#header-cart .cart-count:not(:empty) {
+#header-cart #cart-count:not(:empty) {
   position: absolute;
   top: 16px;
   right: 24px;

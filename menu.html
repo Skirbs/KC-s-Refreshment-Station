@@ -30,7 +30,7 @@
         <a id="header-cart" href="./cart.html">
           <img class="not-filled" src="./assets/images/icons/cart.svg" alt="Cart Icon" />
           <img class="filled" src="./assets/images/icons/cart-filled.svg" alt="Cart Icon" />
-          <span class="cart-count"></span>
+          <span id="cart-count"></span>
         </a>
       </div>
     </header>
@@ -103,8 +103,8 @@
             <p class="price">₱39-₱49</p>
             <p class="desc">Red Velvet Milk Tea</p>
             <select>
-              <option value="Medium">Medium (₱39)</option>
-              <option value="Large">Large (₱49)</option>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
           </div>
@@ -119,8 +119,8 @@
             <p class="price">₱39-₱49</p>
             <p class="desc">Wintermelon Milk Tea</p>
             <select>
-              <option value="Medium">Medium (₱39)</option>
-              <option value="Large">Large (₱49)</option>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
           </div>
@@ -139,8 +139,8 @@
             <p class="price">₱39-₱49</p>
             <p class="desc">Blueberry Fruit Tea</p>
             <select>
-              <option value="Medium">Medium (₱39)</option>
-              <option value="Large">Large (₱49)</option>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
           </div>
@@ -227,8 +227,8 @@
             <p class="price">₱39-₱49</p>
             <p class="desc">Passion Fruit Tea</p>
             <select>
-              <option value="Medium">Medium (₱39)</option>
-              <option value="Large">Large (₱49)</option>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
           </div>
@@ -244,8 +244,8 @@
             <p class="price">₱39-₱49</p>
             <p class="desc">Strawberry Fruit Tea</p>
             <select>
-              <option value="Medium">Medium (₱39)</option>
-              <option value="Large">Large (₱49)</option>
+              <option data-price="39" value="Medium">Medium (₱39)</option>
+              <option data-price="49" value="Large">Large (₱49)</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
           </div>
@@ -608,7 +608,7 @@
           <img src="./assets/images/food/dessert/Caramel Cake.jpg" alt="Solo Burger" />
           <div class="item-info-div">
             <h4>Chocolate Caramel Cake</h4>
-            <p class="price">₱1300</p>
+            <p class="price">₱1500</p>
             <p class="desc">Chocolate cake topped with smooth caramel sauce</p>
             <button class="add-to-cart">Add to Cart</button>
           </div>
@@ -670,6 +670,8 @@
       <p>Created by <b>Gavino, Czeann Kirbie S.</b> • PUPQC 2025-2026 • BSIT 1-1</p>
     </footer>
 
+    <!-- JS -->
+    <script src="./assets/js/design/headerCartCount.js"></script>
     <script src="./assets/js/functional/menu.js"></script>
   </body>
 </html>
