@@ -92,7 +92,7 @@ h1 {
 }
 #quantity-col-header,
 .quantity-col {
-  flex: 0.5;
+  flex: 0.75;
 }
 
 /* Cart Items Columns*/
@@ -115,8 +115,8 @@ h1 {
   font-weight: bold;
 }
 .quantity-col button {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background-color: var(--tertiary-color);
   color: var(--text-color);
   border: 3px solid var(--darker-tertiary-color);

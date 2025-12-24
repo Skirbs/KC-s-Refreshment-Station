@@ -1,4 +1,5 @@
 const addToCartBtns = document.querySelectorAll(".add-to-cart");
+const toastContainer = document.querySelector("#toast-container");
 
 addToCartBtns.forEach((btn) => {
   const btnParent = btn.parentElement;
@@ -37,6 +38,17 @@ addToCartBtns.forEach((btn) => {
     headerCartTotalQty++;
     cartCountElement.innerText = headerCartTotalQty;
 
-    console.log(cartItems);
+    // Show toast notification
+    const toastMessageSpan = document.createElement("span");
+    toastMessageSpan.classList.add("toast-message");
+    toastMessageSpan.innerText = `🛒 Bought "${productTitle}"`;
+    toastContainer.append(toastMessageSpan);
+
+    setTimeout(() => {
+      toastMessageSpan.classList.add("closed");
+      setTimeout(() => {
+        toastMessageSpan.remove();
+      }, 500);
+    }, 2000);
   });
 });

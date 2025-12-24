@@ -6,3 +6,22 @@
     opacity: 1;
   }
 }
+
+@keyframes popupFadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideLeft {
+  /* Must be position relative */
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0px;
+  }
+}
