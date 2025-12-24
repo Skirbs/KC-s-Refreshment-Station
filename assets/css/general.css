@@ -34,7 +34,9 @@ body {
 #background {
   position: fixed;
   z-index: -10;
-  inset: 0;
+  left: 0;
+  right: 0;
+  height: 100lvh;
   background-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
 }
 
