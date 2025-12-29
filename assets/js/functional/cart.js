@@ -44,6 +44,7 @@ function createCartItem(name, cartItemValues) {
 
     saveItems();
   });
+  
   qtyDecreaseBtn.addEventListener("mousedown", (ev) => {
     cartItemValues.qty--;
     qtyTextSpan.innerText = `x${cartItemValues.qty}`;
@@ -85,3 +86,34 @@ if (Object.keys(cartItems).length > 0) {
 }
 
 cartTotalAmountSpan.innerText = `₱${countTotalPrice()} (${countTotalQty()} ${countTotalQty() > 1 ? "items" : "item"})`;
+
+// Checkout Functionality
+const checkoutButton = document.querySelector("#checkout-button");
+const checkoutModal = document.querySelector("dialog");
+const closeModalButton = document.querySelector("#close-modal-button");
+
+// Checkout Button
+checkoutButton.addEventListener("mousedown", (ev) => {
+  // Show Modal
+  checkoutModal.showModal();
+
+  // Clear Cart
+  localStorage.removeItem("cartItems");
+
+  // Clear cart items container
+  cartItemsContainer.innerHTML = "";
+
+  // Reset Header Cart Count
+  headerCartTotalQty = 0;
+  cartCountElement.innerText = "";
+});
+
+// Close Modal Button
+closeModalButton.addEventListener("mousedown", (ev) => {
+  // Close Modal
+  checkoutModal.close();
+
+  // Reset Cart UIj
+  emptyCartDiv.style.display = "block";
+  mainCartDiv.style.display = "none";
+});
