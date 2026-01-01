@@ -187,7 +187,7 @@ h1 {
 }
 
 /* Modal Popup Styling */
-dialog {
+#checkout-dialog {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -198,24 +198,24 @@ dialog {
   background-color: var(--secondary-color);
   text-align: center;
 }
-dialog::backdrop {
+#checkout-dialog::backdrop {
   animation: popupFadeIn 0.2s cubic-bezier(0.3, 1.15, 0.6, 1.09);
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-dialog h2 {
+#checkout-dialog h2 {
   margin-bottom: 12px;
   border-bottom: 4px solid var(--darker-tertiary-color);
   background-color: var(--tertiary-color);
   padding: 4px 8px;
   font-size: 2.5rem;
 }
-dialog p {
+#checkout-dialog p {
   padding-inline: 16px;
   font-size: 1.5rem;
   text-wrap: balance;
 }
-dialog button {
+#checkout-dialog button {
   cursor: pointer;
   margin-block: 12px;
   border: 3px solid var(--darker-tertiary-color);
@@ -281,5 +281,30 @@ dialog button {
   }
   #total-label {
     text-align: center;
+  }
+
+  #checkout-dialog {
+    width: 90%;
+  }
+  #checkout-dialog h2 {
+    font-size: 2rem;
+  }
+  #checkout-dialog p {
+    font-size: 1.25rem;
+  }
+  #checkout-dialog button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 426px) {
+  #checkout-dialog h2 {
+    font-size: 1.75rem;
+  }
+  #checkout-dialog p {
+    font-size: 1rem;
+  }
+  #checkout-dialog button {
+    font-size: 1rem;
   }
 }

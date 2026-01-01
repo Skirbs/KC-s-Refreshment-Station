@@ -60,7 +60,7 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
-  padding-inline: 48px;
+  padding-inline: 24px;
   width: 100%;
   scroll-margin-top: 200px;
   list-style-type: none;
