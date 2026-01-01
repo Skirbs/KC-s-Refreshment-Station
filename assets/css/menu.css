@@ -41,6 +41,10 @@ hr {
   text-align: center;
 }
 
+#search-result-header {
+  display: none;
+}
+
 #menu h3 {
   margin-bottom: 12px;
   border-bottom: 2px solid var(--tertiary-color);

@@ -44,7 +44,7 @@ function createCartItem(name, cartItemValues) {
 
     saveItems();
   });
-  
+
   qtyDecreaseBtn.addEventListener("mousedown", (ev) => {
     cartItemValues.qty--;
     qtyTextSpan.innerText = `x${cartItemValues.qty}`;
