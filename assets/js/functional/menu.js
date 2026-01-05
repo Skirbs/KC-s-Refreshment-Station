@@ -65,6 +65,7 @@ let isSearching = false;
 menuSearchBtn.addEventListener("mousedown", (ev) => {
   isSearching = !isSearching;
   menuSearchBar.style.display = isSearching ? "inline" : "none";
+  menuSearchBar.value = "";
 
   toggleUI();
 
@@ -74,27 +75,9 @@ menuSearchBtn.addEventListener("mousedown", (ev) => {
       menuItem.style.display = "flex";
     });
   } else {
-    console.log("lllal");
     setTimeout(() => {
       menuSearchBar.focus();
     }, 0);
-  }
-});
-
-menuSearchBar.addEventListener("input", (ev) => {
-  updateMenuSearchResults(ev.target.value.toLowerCase().trim());
-});
-
-document.addEventListener("keydown", (ev) => {
-  if (ev.key == "Escape") {
-    isSearching = false;
-    menuSearchBar.style.display = "none";
-
-    toggleUI();
-
-    menuItems.forEach((menuItem) => {
-      menuItem.style.display = "flex";
-    });
   }
 });
 
@@ -133,3 +116,19 @@ function updateMenuSearchResults(searchInput) {
     }
   });
 }
+
+menuSearchBar.addEventListener("input", (ev) => {
+  updateMenuSearchResults(ev.target.value.toLowerCase().trim());
+});
+document.addEventListener("keydown", (ev) => {
+  if (ev.key == "Escape") {
+    isSearching = false;
+    menuSearchBar.style.display = "none";
+
+    toggleUI();
+
+    menuItems.forEach((menuItem) => {
+      menuItem.style.display = "flex";
+    });
+  }
+});
