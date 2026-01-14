@@ -43,7 +43,7 @@ addToCartBtns.forEach((btn) => {
     // Show toast notification
     const toastMessageSpan = document.createElement("span");
     toastMessageSpan.classList.add("toast-message");
-    toastMessageSpan.innerText = `🛒 Bought "${productTitle}"`;
+    toastMessageSpan.innerText = `🛒 Added "${productTitle}" To Cart`;
     toastContainer.append(toastMessageSpan);
 
     setTimeout(() => {

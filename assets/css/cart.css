@@ -30,6 +30,7 @@ h1 {
 }
 
 /* Main Cart Content */
+
 #cart-contents-div {
   display: flex;
   flex-direction: column;
@@ -38,7 +39,6 @@ h1 {
   border: 3px solid var(--darker-tertiary-color);
   border-radius: 4px;
   background-color: var(--darker-tertiary-color);
-  max-width: 1600px;
   text-align: center;
 }
 
